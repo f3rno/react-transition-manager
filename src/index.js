@@ -75,7 +75,7 @@ const TransitionManager = React.createClass({
           clearTimeout(this.timers.entering[key]);
           delete this.timers.entering[key];
           this.setState(state);
-        }.bind(this), 10);
+        }.bind(this), 100);
       }
     }, this);
 
